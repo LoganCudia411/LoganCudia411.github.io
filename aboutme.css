@@ -1,0 +1,160 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+font-family: 'Space Grotesk', sans-serif;
+margin: 0;
+padding: 0 0;
+max-width: 100%;
+max-height: 100%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+}
+
+.about-me-container {
+display: flex;
+flex: row;
+width: 100%;
+margin-top: 10%;
+}
+
+.about-me-text-container {
+text-align: left;
+margin-left: 10%;
+}
+
+.header {
+z-index: 7;
+background: linear-gradient(45deg, #F1F6F9, #14274E, #394867,#9BA4B4);
+background-size:400% 400%;
+width: 100%;
+height:820px;
+animation: animate 15s ease infinite;
+}
+.header ul {
+height: 50px;
+display: flex;
+justify-content: center;
+}
+.header ul li {
+display: inline-block;
+padding: 40px 15px;
+}
+.header ul li a {
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+font-size: 20px;
+padding: 5px 10px;
+}
+.header ul li a:hover {
+background: #fff;
+color: #000;
+}
+.header h2 {
+text-align: center;
+color: #fff;
+font-size: 40px;
+margin-top: 5%;
+margin-bottom: 20px;
+}
+.header p {
+text-align: left;
+font-size: 20px;
+width: none;
+margin: auto;
+color: #fff;
+line-height: 1.7;
+}
+@keyframes animate {
+0% {
+	background-position: 0% 50%;
+}
+50% {
+	background-position: 100% 50%;
+}
+100% {
+	background-position: 0% 50%;
+}
+}
+
+
+/* image style */
+.portrait {
+width: 100%;
+/* Improving my own picture */
+padding-top: 1px;
+flex: 1;
+display: flex;
+flex-direction: row;
+border-radius: 300px;
+transform: scale(.6);
+margin-right: 100px;
+height: auto;;
+
+ }
+    
+
+/*style for language sections*/
+.section__title {
+margin-bottom: 0;
+text-align: center;
+color: #fff;
+margin-top: 5.3%;
+font-size: 1.5vw;
+  }
+
+.language__img {
+width: 100%;
+max-width: auto;
+transition: all 300ms;
+  }
+.language:hover .language__img {
+filter: brightness(80%);
+opacity: 0.86;
+transform: scale(0.9);
+  }
+  
+.language {
+width: 5%;
+display: flex;
+justify-content: center;
+position: relative;
+  }
+.language__img--wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40% 10px;
+  }
+  
+.language__list {
+display: flex;
+justify-content: center;
+width: 100%;
+flex-wrap: wrap;
+}
+  
+.language__name {
+position: absolute;
+bottom: 0;
+transform: scale(0);
+transition: all 300ms;
+font-size: 15px;
+opacity: 0;
+ }
+.language:hover .language__name {
+transform: scale(1);
+opacity: 1;
+color: #fff;
+  }
+  
+#top{
+  font-size: 4vw;
+  text-align: center;
+  color: #fff;
+}
