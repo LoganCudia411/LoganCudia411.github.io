@@ -12,8 +12,8 @@
 		<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 	</head>
 
-    <body>
-        <div class="header">
+    <body class="header">
+
 		<ul>
 			<li>
 				<a href="./index.html">Home</a>
@@ -52,9 +52,9 @@
 		  </div>
 		</ul>
 		<!-- ABOUT ME -->
-		<section id="about-me">
+		<section>
 		  <div class="about-me-container">
-			<div class="about-me-text-container">
+			<div  id="about-me" class="about-me-text-container">
 			  <h2 id = "top"; style="font-size: 4vw;" style = "text-align:center;">About Me</h2>
 			  <p style= "font-size: 1.5vw; "style = "text-align:left;">
 				Hello! My name is Logan Cudia. I am a current computer engineering undergrad at UIUC. I am an avid gym-enthusiast who loves watching basketball and listening to music.
@@ -75,7 +75,7 @@
 		<!-- LANGUAGE DISPLAY -->
 		<section id="languages">
 			<div class="container">
-			  <div class="row">
+			  <div>
 				<h1 class="section__title">This is my <span >technology stack</span></h1>
 				<div class="language__list">
 				  <div class="language">
@@ -146,7 +146,7 @@
 		  </section>
 		
 		    <!-- PROJECTS -->
-			<section id="projects">
+			<section style="margin-bottom: 12%;" id="projects">
 				<div class="container">
 				  <div class="row">
 					<h1 style="color: #FFF" class="section__title">Here are some of my projects</h1>
@@ -179,9 +179,106 @@
 				  </div>
 				</div>
 			</section>
-
-			
-	    </div>
+			<section>
+				<div style="margin-bottom: 12%;" class="container">
+				  <div class="row"></div>
+					<ul class="project__list">
+					  <li class="project">
+						<div class="project__wrapper">
+						  <img src="./assets/embedded-System.jpeg" class="project__img" alt="EV Concept project">
+						  <div class="project__description">
+							<h3 class="project__description--title">Wheel Speed Encoder Board</h3>
+							<h4 class="project__description--sub-title">
+							  STM32, KiCad, CANBus
+							</h4>
+							<p style = "font-size: 1.2vw;" class ="project__description--para">
+							  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
+							  luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
+							  adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
+							</p>
+							<div class="project__description--links">
+							  <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
+								<i class="fab fa-github"></i>
+							  </a>
+							  <a href="https://www.yourwebsite.com" class="project__description--link">
+								<i class="fas fa-link"></i>
+							  </a>
+							</div>
+						  </div>
+						</div>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			</section>
+			<section>
+				<div style="margin-bottom: 22%;" class="container">
+				  <div class="row"></div>
+					<ul class="project__list">
+					  <li class="project">
+						<div class="project__wrapper">
+						  <img src="./assets/embedded-System.jpeg" class="project__img" alt="EV Concept project">
+						  <div class="project__description">
+							<h3 class="project__description--title">Wheel Speed Encoder Board</h3>
+							<h4 class="project__description--sub-title">
+							  STM32, KiCad, CANBus
+							</h4>
+							<p style = "font-size: 1.2vw;" class ="project__description--para">
+							  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
+							  luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
+							  adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
+							</p>
+							<div class="project__description--links">
+							  <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
+								<i class="fab fa-github"></i>
+							  </a>
+							  <a href="https://www.yourwebsite.com" class="project__description--link">
+								<i class="fas fa-link"></i>
+							  </a>
+							</div>
+						  </div>
+						</div>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			</section>
+			<footer>
+				<div class="row footer__row">
+				  <a href="#" class="footer__anchor">
+					<figure class="footer__logo">
+					  <img src="./assets/logo.svg" class="footer__logo--img" alt="">
+					</figure>
+					<span class="footer__logo--popper">
+					  Top
+					  <i class="fas fa-arrow-up"></i>
+					</span>
+				  </a>
+				  <div class="footer__social--list">
+					<a href="https://google.com" target="_blank" class="
+					  footer__social--link
+					  link__hover-effect
+					  link__hover-effect--white
+					" target="_blank">GitHub</a>
+					<a href="https://google.com" target="_blank" class="
+					  footer__social--link
+					  link__hover-effect
+					  link__hover-effect--white
+					" target="_blank">LinkedIn</a>
+					<a href="mailto:email@email.com" target="_blank" class="
+					  footer__social--link
+					  link__hover-effect
+					  link__hover-effect--white
+					" target="_blank">Email</a>
+					<a href="./assets/Example Resume.pdf" target="_blank" class="
+					  footer__social--link
+					  link__hover-effect
+					  link__hover-effect--white
+					" target="_blank">Resume</a>
+				  </div>
+				  <div class="footer__copyright">Copyright © 2021 David Bragg</div>
+				</div>
+			  </footer>
         <script src="index.js"></script>
     </body>
 </html>
