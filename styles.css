@@ -18,7 +18,7 @@ margin: 0;
 	background: linear-gradient(45deg, #F1F6F9, #14274E, #394867,#9BA4B4);
 	background-size: 400% 400%;
 	width: 100%;
-	height: 800px;
+	height: auto;
 	animation: animate 15s ease infinite;
 }
 .header ul {
@@ -103,3 +103,88 @@ margin: 0;
 	bottom: 0%;
 	position: absolute;
 }
+
+/* ABOUT ME SECTION */
+.about-me-container {
+	display: flex;
+	flex: column;
+	width: 100%;
+	margin-top: 20%;
+	}
+	
+.about-me-text-container {
+text-align: left;
+	width: 70%;
+	}
+	
+/* image style */
+.portrait {
+	max-width: 300px;
+	width: 100%;
+	/* Improving my own picture */
+	padding-top: 1px;
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	border-radius: 300px;
+	transform: scale(.6);
+	height: auto;
+	
+	 }
+		
+	
+	/*style for language sections*/
+	.section__title {
+	margin-bottom: 0;
+	text-align: center;
+	color: #fff;
+	margin-top: 5.3%;
+	font-size: 1.5vw;
+	  }
+	
+	.language__img {
+	width: 100%;
+	max-width: auto;
+	transition: all 300ms;
+	  }
+	.language:hover .language__img {
+	filter: brightness(80%);
+	opacity: 0.86;
+	transform: scale(0.9);
+	  }
+	  
+	.language {
+	width: 5%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	  }
+	.language__img--wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40% 10px;
+	  }
+	  
+	.language__list {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+	}
+	  
+	.language__name {
+	position: absolute;
+	bottom: 0;
+	transform: scale(0);
+	transition: all 300ms;
+	font-size: 15px;
+	opacity: 0;
+	 }
+	.language:hover .language__name {
+	transform: scale(1);
+	opacity: 1;
+	color: #fff;
+	  }
+	  
+	
