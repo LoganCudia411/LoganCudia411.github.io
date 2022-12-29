@@ -32,8 +32,11 @@ li {
   }
 .nav {
 	height: 50px;
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-start;
 }
 .nav_element {
 	display: inline-block;
@@ -65,7 +68,7 @@ li {
 	font-size: 20px;
 	width: none;
 	color: #fff;
-	line-height: 1.7;
+	line-height: 1.5;
 }
 @keyframes animate {
 	0% {
@@ -287,7 +290,7 @@ text-align: left;
 	  }
 	  
 	  .project__description--title {
-		font-size: 40px;
+		font-size: 35x;
 	  }
 	  
 	  .project__description--para {
@@ -356,4 +359,71 @@ footer {
   .footer__anchor:hover .footer__logo--popper {
 	transform: translateX(60px);
 	opacity: 1;
+  }
+
+
+
+  /* Display for smaller screens */
+@media (max-width: 768px) {
+nav {
+  height: 68px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.about-me__info--para {
+  font-size: 18px;
+}
+
+.language {
+  width: calc(100% / 10);
+}
+
+.project__description--para {
+  font-size: 14px;
+}
+
+.project__description {
+  left: 30px;
+  padding-right: 30px;
+}
+}
+  
+  /* PHONES */
+  @media (max-width: 480px) {
+.nav__link:not(:last-child) {
+  display: none;
+}
+
+.project__wrapper {
+  border-radius: 0;
+}
+
+.project__description {
+  padding: 0;
+  left: 0;
+  width: 100%;
+}
+
+.project__description--para {
+  display: none;
+}
+
+.project__description--links {
+  display: flex;
+  justify-content: center;
+}
+
+.project__description--title {
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+}
+
+.project__description--sub-title {
+  text-align: center;
+  margin: 12px 0;
+}
   }
