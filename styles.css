@@ -313,7 +313,7 @@ text-align: left;
 	  /* FOOTER */
 
 footer {
-	background-color: #fff;
+	background-color: #708090 ;
   }
   
   .footer__social--list {
@@ -332,14 +332,17 @@ footer {
   }
   
   .footer__logo--img {
-	width: 70px;
+	/* width: 70px; */
 	height: 70px;
+	
   }
   
   .footer__social--link,
   .footer__copyright,
   .footer__logo--popper {
-	color: rgb(3, 3, 3);
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
   }
   
   .footer__logo--popper {
