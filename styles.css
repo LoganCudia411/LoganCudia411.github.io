@@ -119,6 +119,7 @@ li {
 .about_me_section{
 	display: flex;
 	flex-direction: row-reverse;
+	background-color: #708090;
 }
 .about-me-container {
     display: flex;
