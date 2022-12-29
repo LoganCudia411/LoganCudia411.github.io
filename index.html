@@ -7,33 +7,33 @@
         <meta name="E portfolio" content="Logan's Information">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
         <style> @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap'); </style>
 		<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 	</head>
-
     <body class="header">
-
-		<ul>
-			<li>
-				<a href="./index.html">Home</a>
+		<ul class="nav">
+			<li class="nav_element">
+				<a class="link" href="./index.html">Home</a>
 			</li>
-			<li>
-				<a href="#about-me">About</a>
+			<li class="nav_element">
+				<a class="link"  href="#about-me">About</a>
 			</li>
-			<li>
-				<a href="#projects">Portfolio</a>
+			<li class="nav_element">
+				<a class="link"  href="#projects">Portfolio</a>
 			</li>
-			<li>
-				<a href="mailto:llcudia2@illinois.edu">Contact</a>
+			<li class="nav_element">
+				<a class="link"  href="mailto:llcudia2@illinois.edu">Contact</a>
 			</li>
 		</ul>
 		<br><br><br><br><br><br>
 		<h2> <a href="" class="typewrite" data-period="2000" data-type='[ "Hello World!", "Welcome to my website!"]'>
 			<span class="wrap"></span>
 		  </a> </h2>
-		<p><strong> <em>//I'm Logan Cudia, an aspiring <span style="color: rgb(94, 164, 238) ;">software developer</span> located in <span style="color: rgb(94, 164, 238) ;">Chicago, IL</span>
-		<br>//I currently attend <span style="color: rgb(94, 164, 238);">UIUC</span> as a <span style="color: rgb(94, 164, 238) ;">Computer Engineer.</span> <br>
+		<p><strong> <em>//I'm Logan Cudia, an aspiring <span style="color:#5680e9 ;">software developer</span> located in <span style="color: #5680e9">Chicago, IL</span>
+		<br>//I currently attend <span style="color: #5680e9;">UIUC</span> as a <span style="color: #5680e9">Computer Engineer.</span> <br>
 		<br>Nice to meet you, let's connect!</strong></p></em>
 		
 		<div id= "about_me" class="about-me__links">
@@ -52,7 +52,7 @@
 		  </div>
 		</ul>
 		<!-- ABOUT ME -->
-		<section>
+		<section class ="about_me_section">
 			<div id="about-me" class="img_container"><img
 			  src="./assets/profilePic.jpeg"
 			  alt="self_portrait"
@@ -75,7 +75,7 @@
 		<!-- LANGUAGE DISPLAY -->
 		<section style= "margin-bottom: 10% ;" id="languages">
 			  <div>
-				<h1 class="section__title">This is my <em style="color: rgb(94, 164, 238);">technology stack</em></h1>
+				<h1 class="section__title">This is my <em style="color: #5680e9">technology stack</em></h1>
 				<div class="language__list">
 				  <div class="language">
 					<figure class="language__img--wrapper">
@@ -144,11 +144,59 @@
 		  </section>
 		
 		    <!-- PROJECTS -->
-			<section style="margin-bottom: 22%;" id="projects">
+			<section style="margin-bottom: 22%;" style="box-sizing: border-box;" id="projects">
 				<div class="container">
 				  <div class="row">
-					<h1 style="color: #FFF" class="section__title">Here are some of my projects</h1>
+					<h4 style="color: #FFF" class="section__title">Here are some of my projects</h4>
 					<ul class="project__list">
+					  <li class="project">
+						<div class="project__wrapper">
+						  <img src="./assets/embedded-System.jpeg" class="project__img" alt="EV Concept project">
+						  <div class="project__description">
+							<h3 class="project__description--title">Wheel Speed Encoder Board</h3>
+							<h5 class="project__description--sub-title">
+							  STM32, KiCad, CANBus
+							</h5>
+							<p style="font-size: 16px" class ="project__description--para">
+							  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
+							  luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
+							  adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
+							</p>
+							<div class="project__description--links">
+							  <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
+								<i class="fab fa-github"></i>
+							  </a>
+							  <a href="https://www.yourwebsite.com" class="project__description--link">
+								<i class="fas fa-link"></i>
+							  </a>
+							</div>
+						  </div>
+						</div>
+					  </li>
+					  <li class="project">
+						<div class="project__wrapper">
+						  <img src="./assets/embedded-System.jpeg" class="project__img" alt="EV Concept project">
+						  <div class="project__description">
+							<h3 class="project__description--title">Wheel Speed Encoder Board</h3>
+							<h4 class="project__description--sub-title">
+							  STM32, KiCad, CANBus
+							</h4>
+							<p style = "font-size:vw;" class ="project__description--para">
+							  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
+							  luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
+							  adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
+							</p>
+							<div class="project__description--links">
+							  <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
+								<i class="fab fa-github"></i>
+							  </a>
+							  <a href="https://www.yourwebsite.com" class="project__description--link">
+								<i class="fas fa-link"></i>
+							  </a>
+							</div>
+						  </div>
+						</div>
+					  </li>
 					  <li class="project">
 						<div class="project__wrapper">
 						  <img src="./assets/embedded-System.jpeg" class="project__img" alt="EV Concept project">
@@ -177,7 +225,7 @@
 				  </div>
 				</div>
 			</section>
-			<section style="margin-bottom: 22%;">
+			<!-- <section style="margin-bottom: 22%;">
 				<div  class="container">
 				  <div class="row"></div>
 					<ul class="project__list">
@@ -240,7 +288,7 @@
 					</ul>
 				  </div>
 				</div>
-			</section>
+			</section> -->
 			<footer style="margin-top: 10%;">
 				<div class="row footer__row">
 				  <a href="#" class="footer__anchor">

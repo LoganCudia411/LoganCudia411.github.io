@@ -2,6 +2,13 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, span{
+	line-height : 1.25;
 }
 body {
 font-family: 'Space Grotesk', sans-serif;
@@ -14,29 +21,32 @@ font-family: 'Space Grotesk', sans-serif;
 }
 .header {
 	z-index: 1;
-	background: linear-gradient(45deg, #F1F6F9, #14274E, #394867,#9BA4B4);
-	background-size: 200% 200%;
+	background: linear-gradient(-45deg, #F1F6F9, #14274E, #394867,#14274E, #394867, #394867,#F1F6F9); 
+	background-size: 150% 150%;
 	width: 100%;
 	height: 100%;
 	animation: animate 15s ease infinite;
 }
-.header ul {
+li {
+	list-style-type: none;
+  }
+.nav {
 	height: 50px;
 	display: flex;
 	justify-content: center;
 }
-.header ul li {
+.nav_element {
 	display: inline-block;
 	padding: 40px 15px;
 }
-.header ul li a {
+.link{
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 20px;
 	padding: 5px 10px;
 }
-.header ul li a:hover {
+.link:hover {
 	background: #fff;
 	color: #000;
 }
@@ -77,7 +87,7 @@ font-family: 'Space Grotesk', sans-serif;
     align-items: center;
     max-width: 300px;
     margin: 0 auto;
-	margin-bottom: 220px;
+	margin-bottom: 23.5%;
     text-align: center;
 }
 
@@ -103,10 +113,15 @@ font-family: 'Space Grotesk', sans-serif;
 }
 
 /* ABOUT ME SECTION */
+.about_me_section{
+	display: flex;
+	flex-direction: row-reverse;
+}
 .about-me-container {
     display: flex;
     width: 100%;
     margin-bottom: 4%;
+	margin-left: 11%;
     padding: 0px 0%;
     align-items: center;
     flex-direction: column;
@@ -131,19 +146,18 @@ text-align: left;
 .img_container {
 	width: 100%;
     display: flex;
-    transform: scale(.6);
-    position: relative;
+    /* transform: scale(.6); */
+    position: inherit;
     justify-content: space-evenly;
-    /* flex-direction: column; */
-    /* align-items: center; */
+    flex-direction: column;
+   margin-left: 10%;
     flex-wrap: wrap;
-	top: 150px;
 }
 	
 .portrait{
 	border-radius: 50%;
 	display: flex;
-	width: 20%;
+	width: 48%;
 	height: auto;
 }
 	/*style for language sections*/
@@ -151,7 +165,7 @@ text-align: left;
 	margin-bottom: 0;
 	text-align: center;
 	color: #fff;
-	font-size: 1.5vw;
+	font-size: 3vw;
 	  }
 
 	.language__img {
@@ -205,11 +219,18 @@ text-align: left;
 	  }
 	  .row {
 		width: 100%;
-		max-width: 100%;
+		max-width: 835px;
 		margin: 0 auto;
 		padding: 0 12px;
 	  }
 	  
+	.project {
+		margin-bottom: 135px;
+	  }
+	  
+	.project:last-child {
+		margin-bottom: 40px;
+	  }
 	
 	  .project__img {
 		width: 100%;
@@ -222,7 +243,6 @@ text-align: left;
 		border-radius: 20px;
 		overflow: hidden;
 		position: relative;
-		width: auto;
 	  }
 	  .project__wrapper:before {
 		content: "";
@@ -235,7 +255,6 @@ text-align: left;
 		opacity: 0;
 		transition: opacity 450ms ease;
 		z-index: 2;
-
 		transform: translateY(100%);
 	  }
 	  .project:hover .project__wrapper:before {
@@ -279,13 +298,13 @@ text-align: left;
 		font-size: 20px;
 		margin-right: 16px;
 	  }
-	  
-	  .project__description--title,
-	  .project__description--sub-title,
-	  .project__description--para,
-	  .project__description--link {
-		text-align: left;
-		color: #fff;
+	
+	.project__description--title,
+	.project__description--sub-title,
+	.project__description--para,
+	.project__description--link {
+	text-align: left;
+	color: #fff;
 	  }
 
 	  /* FOOTER */
